@@ -1,0 +1,98 @@
+NEWSPAPER HEADLINES FOR SYNTAX
+Read each of the following sentences carefully and decide the two ways in which the phrase structure may be interpreted in order to provide the two ambiguous interpretations. Use brackets on two copies of each headline to demonstrate the structural cause of the ambiguity. For example: 
+
+
+
+
+Soviet virgin lands short of goal again 
+
+--------------------------------------------------------------------------------
+
+[Soviet virgin lands]NP[fall short of goalVP again]S
+
+[Soviet virgin]NP [lands short of goalVP again]S 
+Be prepared to diagram these examples on the board in class. 
+
+
+Syntactically Ambiguous News Headlines 
+1. British Left Waffles on Falkland Islands
+2. Dr. Ruth to Talk about Sex with Newspaper Editors
+3. Lung Cancer in Women Mushrooms
+4. Teacher Strikes Idle Kids
+5. Stud Tires Out
+6. Soviet Virgin Lands Short of Goal Again
+7. Shot Off Woman's Leg Helps Nicklaus to 66
+8. Reagan Wins on Budget, but More Lies Ahead
+9. Enraged Cow Injures Farmer with Axe
+10. Miners Refuse to Work after Death
+11. Squad Helps Dog Bite Victim
+12. Juvenile Court Tries Shooting Defendant
+13. Stolen Painting Found by Tree
+14. Killer Sentenced to Die for Second Time in 10 Years
+15. Drunk Drivers Paid $1,000 in 1984
+16. Grandmother of Eight Makes Hole in One
+17. Stiff opposition expected to casketless funeral plan
+18. Two Convicts Evade Noose, Jury Hung
+19. Squad helps dog bite victim
+20. Dealers will Hear Car Talk at Noon
+21. Enraged Cow Injures Farmer with Ax
+22. Milk Drinkers are Turning to Powder
+23. NJ Judge to Rule on Nude Beach
+
+
+-----------------------------------------------------
+Wiki
+Syntactic ambiguityFrom Wikipedia, the free encyclopediaJump to: navigation, search 
+For philosophical considerations of ambiguity, see ambiguity.
+Syntactic ambiguity is a property of sentences which may be reasonably interpreted in more than one way, or reasonably interpreted to mean more than one thing. Ambiguity may or may not involve one word having two parts of speech or homonyms.
+
+Syntactic ambiguity arises not from the range of meanings of single words, but from the relationship between the words and clauses of a sentence, and the sentence structure implied thereby. When a reader can reasonably interpret the same sentence as having more than one possible structure, the text is equivocal and meets the definition of syntactic ambiguity.
+
+In legal disputes, courts may be asked to interpret the meaning of syntactic ambiguities in statutes or contracts. In some instances, arguments asserting highly unlikely interpretations have been deemed frivolous.
+
+Contents [hide] 
+1 Syntactic and semantic ambiguity
+2 In headlines
+3 Examples
+4 See also
+5 References
+6 External links
+ 
+
+[edit] Syntactic and semantic ambiguityIn syntactic ambiguity, the same sequence of words is interpreted as having different syntactic structures. In contrast, in semantic ambiguity, the structure remains the same, but the individual words are interpreted differently.[1][2]
+
+[edit] In headlinesNewspaper headlines are written in a telegraphic style (headlinese) which often omits the copula and therefore lends itself to syntactic ambiguity, usually of the garden path type. The name 'crash blossoms' was proposed for these ambiguous headlines by Dan Bloom and Mike O'Connell in the Testy Copy Editors discussion group in August 2009 based on a headline "Violinist linked to JAL crash blossoms".[3] The Columbia Journalism Review regularly reprints such headlines in its "The Lower case" column, and has collected them in the anthologies Squad helps dog bite victim[4] and Red Tape Holds Up New Bridge.[5]
+
+Many purported crash blossoms are actually apocryphal or recycled.[6] One celebrated one from World War I is "French push bottles up German rear";[7] life imitated art in the Second World War headline "Eighth Army Push Bottles Up German Rear".[8]
+
+[edit] ExamplesHere are some examples:
+
+The cow was found by a stream by a farmer. (Did the farmer find the cow near the stream? Or was the cow found near a stream that was near a farmer? Or did the stream find the cow near a farmer?)
+Flying planes can be dangerous. (Either the act of flying planes is dangerous, or planes that are flying are dangerous.)
+I know the people John knows. (Either I am acquainted with the same people as John is, or I know who John's acquaintances are.)
+They are hunting dogs. (Either "they" are hunting for dogs, or those dogs are a type known as "hunting dogs".)
+Eye Drops Off Shelf. (Describing eye drops that came from a shelf, an eye that fell from its location on a shelf, or an eye that delivered a shelf)
+I'm going to sleep. ("Going" can be a verb with destination "sleep" or an auxiliary indicating near future. So it can mean "I am (now) falling asleep", "I am (in the future) intending to sleep" or "I am leaving (this event) to (go and) sleep")
+The word of the Lord came to Zechariah, son of Berekiah, son of Iddo, the prophet. (Which of the three is the prophet?)
+The British left waffles on Falklands (Did the British leave waffles behind, or is there waffling by the British Left?)
+Monty flies back to front. (Monty returns to the frontline, Monty flies backwards, the Monty variety of flies are backwards, or the Monty variety of flies retreat to the front?)
+The Electric Light Orchestra (An orchestra of electric lights, or a light orchestra that's electric)
+Stolen painting found by tree. (Either a tree found a stolen painting, or a stolen painting was found sitting next to a tree.)
+I'm glad I'm a man, and so is Lola. (can mean "Lola and I are both glad I'm a man", or "I'm glad Lola and I are both men", or "I'm glad I'm a man, and Lola is also a man")
+Rubber baby buggy bumpers. (Either they are bumpers made of rubber designed for baby buggies, or they are bumpers made for buggies which carry rubber babies.)
+Little Hope Given Brain-Damaged Man (A brain-damaged man is unlikely to recover, or a brain-damaged man is causing another situation to have little hope of resolution, or someone gave a brain-damaged man to a small girl named Hope.)
+Somali Tied to Militants Held on U.S. Ship for Months. (Either the Somali was held for months, or the Somali was just now linked to militants who were held for months. One could also imagine rope was involved, at which point lexical ambiguity comes into play.)
+Free Ireland. (Either a syntactical entity or a Republican call-to-arms.)
+The following is an example of scope ambiguity—which operator is logically 'above' the other. Some linguistic theories consider them syntactic ambiguities, while other linguistic theories consider them semantic ambiguities.
+
+Someone ate every tomato. (Either some one person ate all of the tomatoes, or for each tomato there is some one person who ate it--Ariel ate one, John ate one, etc.)
+[edit] See alsoAmbiguity
+Amphibology
+Garden path sentence
+List of linguistic example sentences
+Natural language processing
+Paraprosdokian
+Transderivational search
+Ibis redibis
+
+ 
