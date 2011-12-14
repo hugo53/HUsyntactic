@@ -11,7 +11,7 @@ __version__ = "1.0"
 import argparse
 import time
 from   hu.utils.uIO import IO
-from   hu.cyk.cykAlgorithm import CYK
+from   hu.cky.ckyAlgorithm import CKY
 
 if __name__ == '__main__':
     # For help function
@@ -50,12 +50,11 @@ if __name__ == '__main__':
             listLexicon  = io.readLexicon()
             listSentence = io.readSentence()
             #Run CYK
-            cykInstance = CYK(listGrammar, listLexicon, args.outfile)
+            cykInstance = CKY(listGrammar, listLexicon, args.outfile)
             startTime = time.clock()
             for sent in listSentence:
                 cykInstance.syntacticAnalyzer(sent)  
             stopTime = time.clock()
-            print "Analysis success. Please check output file! \n Time is: ",stopTime-startTime                
+            print "Analysis success. Please check output file! \nTime is: ",stopTime-startTime                
         except IOError:
-            print "Cannot open files! Please check your files: ", args.grammar,
-            "\n", args.lexicon, "\n ", args.sentence     
+            print "Cannot open files. Please check your files!"

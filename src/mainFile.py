@@ -4,7 +4,7 @@ Created on 11-12-2011
 @author: hoangnm
 '''
 from hu.utils.uIO import IO
-from hu.cyk import cykAlgorithm
+from hu.cky import ckyAlgorithm
 
 if __name__ == '__main__':
     io = IO('../resources/GRAMMAR.IN', \
@@ -15,7 +15,7 @@ if __name__ == '__main__':
     listOfSentence = io.readSentence()
     outfile = 'OUTFILE.OUT'
     
-    cykInstance = cykAlgorithm.CYK(listOfGrammar,listOfLexicon, outfile)    
+    cykInstance = ckyAlgorithm.CKY(listOfGrammar,listOfLexicon, outfile)    
     i =0
     for sent in listOfSentence:
         print 'SENTENCE ',i,':' , sent
