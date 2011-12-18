@@ -19,8 +19,6 @@ class Test(unittest.TestCase):
         
     def testWriteResult(self):
         
-
-
 if __name__ == "__main__":
     #import sys;sys.argv = ['', 'Test.testWriteResult']
     unittest.main()

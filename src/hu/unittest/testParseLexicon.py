@@ -5,7 +5,7 @@ Created on 11-12-2011
 '''
 import unittest
 from hu.utils.uIO import IO
-from hu.cyk.cykAlgorithm import CYK
+from hu.cky.ckyAlgorithm import CKY
 
 class Test(unittest.TestCase):
 
@@ -13,7 +13,7 @@ class Test(unittest.TestCase):
         io = IO('../../../resources/GRAMMAR.IN','../../../resources/LEXICON.IN'
                 ,'../../../resources/SENTENCES.IN')
         outfile = 'OUTFILE.'
-        self.parser = CYK(io.readGrammar(), io.readLexicon(), outfile)
+        self.parser = CKY(io.readGrammar(), io.readLexicon(), outfile)
         self.parser.matrix=[]
         self.parser.initializeTable(4)
         
