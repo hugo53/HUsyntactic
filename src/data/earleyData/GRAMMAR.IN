@@ -1,0 +1,7 @@
+#Grammar
+S -> NP VP
+PP -> P NP
+VP -> V NP
+VP -> VP PP
+NP -> NP PP
+NP -> N

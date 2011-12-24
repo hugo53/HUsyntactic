@@ -1,0 +1,2 @@
+((S(NP(N John))(VP(V loves)(NP(N Mary)))))
+((S(NP(N dog))(VP(V chases)(NP(N ball))(PP(P on)(NP(N beach))))))((S(NP(N dog))(VP(V chases)(NP(N ball))(PP(P on)(NP(N beach))))))((S(NP(N dog))(VP(V chases)(NP(N ball))(PP(P on)(NP(N beach))))))((S(NP(N dog))(VP(V chases)(NP(N ball))(PP(P on)(NP(N beach))))))((S(NP(N dog))(VP(V chases)(NP(N ball)(PP(P on)(NP(N beach)))))))((S(NP(N dog))(VP(V chases)(NP(N ball)(PP(P on)(NP(N beach)))))))((S(NP(N dog))(VP(V chases)(NP(N ball)(PP(P on)(NP(N beach)))))))((S(NP(N dog))(VP(V chases)(NP(N ball)(PP(P on)(NP(N beach)))))))

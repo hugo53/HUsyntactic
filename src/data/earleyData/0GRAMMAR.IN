@@ -1,0 +1,18 @@
+# Data from Charty
+# Source: http://www.cavar.me/damir/charty/
+S  -> NP VP
+NP -> N
+NP -> DET N
+NP -> DET ADJ N
+NP -> DET N
+NP -> DET N PP
+NP -> DET ADJ N PP
+NP -> DET N NP
+NP -> NP N
+NP -> ADJ NP N
+VP -> V NP
+VP -> V
+VP -> V PP
+VP -> V NP PP
+VP -> ADV V NP
+PP -> P NP

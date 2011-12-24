@@ -1,0 +1,197 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module earley.algorithm.earleyAlgorithm</title>
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="earley.html"><font color="#ffffff">earley</font></a>.<a href="earley.algorithm.html"><font color="#ffffff">algorithm</font></a>.earleyAlgorithm</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:///E:/workspace/husyntactic/src/earley/algorithm/earleyalgorithm.py">e:\workspace\husyntactic\src\earley\algorithm\earleyalgorithm.py</a></font></td></tr></table>
+    <p><tt>Created&nbsp;on&nbsp;14-12-2011<br>
+&nbsp;<br>
+@author:&nbsp;hoangnm</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="earley.algorithm.earleyAlgorithm.html#EarleyAlgorithm">EarleyAlgorithm</a>
+</font></dt></dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="EarleyAlgorithm">class <strong>EarleyAlgorithm</strong></a></font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Describe&nbsp;earley&nbsp;algorithm<br>
+Initialize&nbsp;<a href="#EarleyAlgorithm">EarleyAlgorithm</a>&nbsp;object&nbsp;and&nbsp;call&nbsp;'run'&nbsp;method&nbsp;for&nbsp;each&nbsp;sentence<br>
+to&nbsp;parse&nbsp;syntax&nbsp;tree&nbsp;by&nbsp;earley&nbsp;algorithm<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="EarleyAlgorithm-__init__"><strong>__init__</strong></a>(self, grammar, outfile)</dt><dd><tt>Initialize&nbsp;an&nbsp;<a href="#EarleyAlgorithm">EarleyAlgorithm</a>&nbsp;object.<br>
+An&nbsp;<a href="#EarleyAlgorithm">EarleyAlgorithm</a>&nbsp;object&nbsp;includes:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;grammar&nbsp;:&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;outfile&nbsp;:&nbsp;output&nbsp;file&nbsp;name</tt></dd></dl>
+
+<dl><dt><a name="EarleyAlgorithm-addToChart"><strong>addToChart</strong></a>(self, state, chartI)</dt><dd><tt>Add&nbsp;state&nbsp;to&nbsp;chart&nbsp;entry&nbsp;<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+state:&nbsp;state&nbsp;to&nbsp;add<br>
+chartI:&nbsp;chart&nbsp;entry<br>
+&nbsp;<br>
+Returns<br>
+-------</tt></dd></dl>
+
+<dl><dt><a name="EarleyAlgorithm-checkNextCat"><strong>checkNextCat</strong></a>(self, state)</dt><dd><tt>Check&nbsp;element&nbsp;after&nbsp;dot&nbsp;symbol&nbsp;in&nbsp;rule&nbsp;of&nbsp;state&nbsp;into&nbsp;POS&nbsp;set&nbsp;<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+state:&nbsp;state&nbsp;for&nbsp;check&nbsp;<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+out:&nbsp;True&nbsp;or&nbsp;False</tt></dd></dl>
+
+<dl><dt><a name="EarleyAlgorithm-checkStateInChartEntry"><strong>checkStateInChartEntry</strong></a>(self, state, chartEntry)</dt><dd><tt>Check&nbsp;state&nbsp;exists&nbsp;in&nbsp;chart&nbsp;entry<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+state:&nbsp;state&nbsp;to&nbsp;check&nbsp;(before&nbsp;add)<br>
+chartEntry:&nbsp;chart&nbsp;entry<br>
+Returns<br>
+-------<br>
+out:&nbsp;True&nbsp;if&nbsp;state&nbsp;exists<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Otherwise,&nbsp;return&nbsp;False</tt></dd></dl>
+
+<dl><dt><a name="EarleyAlgorithm-completer"><strong>completer</strong></a>(self, state)</dt><dd><tt>Complete&nbsp;function&nbsp;<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+state:&nbsp;state&nbsp;for&nbsp;complete<br>
+&nbsp;<br>
+Returns<br>
+-------</tt></dd></dl>
+
+<dl><dt><a name="EarleyAlgorithm-earleyParse"><strong>earleyParse</strong></a>(self, sent)</dt><dd><tt>Earley&nbsp;algorithm&nbsp;parse&nbsp;<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+sent:&nbsp;sentence<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+out:&nbsp;chart&nbsp;(initialize&nbsp;at&nbsp;init)&nbsp;is&nbsp;complete</tt></dd></dl>
+
+<dl><dt><a name="EarleyAlgorithm-genSexpression"><strong>genSexpression</strong></a>(self, listGrammar)</dt><dd><tt>Convert&nbsp;a&nbsp;list&nbsp;to&nbsp;S-expression&nbsp;<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+listGrammar:&nbsp;list&nbsp;contains&nbsp;elements&nbsp;of&nbsp;parse&nbsp;tree<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+out:&nbsp;a&nbsp;string&nbsp;S-expression</tt></dd></dl>
+
+<dl><dt><a name="EarleyAlgorithm-grammarRulesFor"><strong>grammarRulesFor</strong></a>(self, leftPartRule)</dt><dd><tt>Find&nbsp;rules&nbsp;for&nbsp;left&nbsp;part&nbsp;of&nbsp;a&nbsp;rule&nbsp;<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+leftPartRule:&nbsp;left&nbsp;part&nbsp;of&nbsp;rule&nbsp;need&nbsp;find<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+out:&nbsp;a&nbsp;list&nbsp;contains&nbsp;rules&nbsp;there&nbsp;are&nbsp;satisfactory</tt></dd></dl>
+
+<dl><dt><a name="EarleyAlgorithm-initChart"><strong>initChart</strong></a>(self, len)</dt><dd><tt>Initialize&nbsp;chart&nbsp;for&nbsp;Earley's&nbsp;algorithm&nbsp;at&nbsp;start&nbsp;point&nbsp;<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+len&nbsp;:&nbsp;length&nbsp;of&nbsp;sentence<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+out:&nbsp;an&nbsp;empty&nbsp;chart</tt></dd></dl>
+
+<dl><dt><a name="EarleyAlgorithm-posOfWord"><strong>posOfWord</strong></a>(self, word)</dt><dd><tt>Get&nbsp;list&nbsp;POS&nbsp;of&nbsp;word&nbsp;<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+word&nbsp;:&nbsp;word&nbsp;want&nbsp;to&nbsp;get<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+out:&nbsp;a&nbsp;list&nbsp;includes&nbsp;POSs&nbsp;of&nbsp;word</tt></dd></dl>
+
+<dl><dt><a name="EarleyAlgorithm-predictor"><strong>predictor</strong></a>(self, state)</dt><dd><tt>Predict&nbsp;function&nbsp;<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+state:&nbsp;state&nbsp;for&nbsp;predict<br>
+&nbsp;<br>
+Returns<br>
+-------</tt></dd></dl>
+
+<dl><dt><a name="EarleyAlgorithm-run"><strong>run</strong></a>(self, sent)</dt><dd><tt>Run&nbsp;Earley&nbsp;algorithm&nbsp;<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+sent:&nbsp;a&nbsp;sentence<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+out:&nbsp;outfile&nbsp;(initialize&nbsp;at&nbsp;init)&nbsp;is&nbsp;wrote&nbsp;if&nbsp;sent&nbsp;has&nbsp;parse&nbsp;tree</tt></dd></dl>
+
+<dl><dt><a name="EarleyAlgorithm-scanner"><strong>scanner</strong></a>(self, state)</dt><dd><tt>Scan&nbsp;function&nbsp;<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+state:&nbsp;state&nbsp;for&nbsp;scan<br>
+&nbsp;<br>
+Returns<br>
+-------</tt></dd></dl>
+
+<dl><dt><a name="EarleyAlgorithm-tracking"><strong>tracking</strong></a>(self, startState, chart)</dt><dd><tt>Generate&nbsp;parse&nbsp;tree<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+startState:&nbsp;state&nbsp;at&nbsp;last&nbsp;column&nbsp;of&nbsp;chart<br>
+chart&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;chart&nbsp;of&nbsp;Earley's&nbsp;algorithm<br>
+&nbsp;<br>
+Returns<br>
+-------<br>
+out:&nbsp;list&nbsp;of&nbsp;elements&nbsp;in&nbsp;parse&nbsp;tree</tt></dd></dl>
+
+<dl><dt><a name="EarleyAlgorithm-writeResult"><strong>writeResult</strong></a>(self, filename, string)</dt><dd><tt>Write&nbsp;string&nbsp;to&nbsp;outfile&nbsp;<br>
+&nbsp;<br>
+Parameters<br>
+----------<br>
+filename:&nbsp;outfile&nbsp;name<br>
+string&nbsp;&nbsp;:&nbsp;string&nbsp;want&nbsp;to&nbsp;write<br>
+&nbsp;<br>
+Returns<br>
+-------</tt></dd></dl>
+
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>POS</strong> = ['N', 'V', 'P', 'DET', 'Det', 'ADV', 'ADJ']</dl>
+
+<dl><dt><strong>listPOS</strong> = []</dl>
+
+<dl><dt><strong>nonSet</strong> = ['NP', 'VP', 'PP', 'ADV', 'ADJ', 'N', 'NominalV', 'DET', 'Det', 'P', 'ROOT']</dl>
+
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>StringTypes</strong> = (&lt;type 'str'&gt;, &lt;type 'unicode'&gt;)</td></tr></table>
+</body></html>

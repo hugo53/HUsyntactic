@@ -8,15 +8,15 @@ Created on 15-12-2011
 
 from earley.datastructure.dsRule import Rule
 from earley.algorithm.earleyAlgorithm import EarleyAlgorithm
-from earley.utils.uIO import IO
+from earley.utils.earleyIO import EarleyIO
 
 if __name__ == '__main__':
-    grammarFile = '../resources/earley/GRAMMAR.IN'
-    lexiconFile = '../resources/earley/LEXICON.IN'
-    sentenceFile = '../resources/earley/SENTENCES.IN'
-    outFile = '../resources/earley/OUTFILE.OUT'
+    grammarFile = '../resources/earley/GRAMMAR1.IN'
+    lexiconFile = '../resources/earley/LEXICON1.IN'
+    sentenceFile = '../resources/earley/SENTENCES1.IN'
+    outFile = '../resources/earley/OUTFILE1.OUT'
     
-    io = IO()
+    io = EarleyIO()
     sents = io.readSentence(sentenceFile)
     print sents
     gram1 = io.readGrammar(grammarFile)

@@ -1,8 +1,0 @@
-#Grammar
-S -> NP VP
-NP -> DET NP
-NP -> NP PP
-VP -> VP NP
-VP -> VP ADV
-VP -> VP PP
-PP -> PP NP

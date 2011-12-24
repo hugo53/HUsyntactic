@@ -6,66 +6,125 @@ Created on 14-12-2011
 
 class State(object):
     '''
-    classdocs
+    A State object in earley's process
     '''
 
-
+###############################################################################
+# BEGIN CONSTRUCTOR
     def __init__(self, rule, position, backpointer):
         '''
-        Constructor
+        Initialize a state in Earley algorithm process
+        A state includes three components: 
+            * rule       : instance of Rule, maybe grammar or lexicon
+            * position   : a list as [0,1], index of words position in sentence
+            * backpointer: a list contains other state for back track 
+                           to build tree parse
         '''
-        #self.stateID = id               # an int (e.g: 0, 1, 2)
         self.rule    = rule             # a Rule
         self.position = position        # a list as [startPos, endPos]
         self.backPointer = backpointer  # a list of state
-                                        #         as [first state, second state]
-        #self.operation   = operation    # a string
-                                        #        (seed, predictor,
-                                        #         scanner, completer)
+                                        # as [first state, second state]
                                         
+# END CONSTRUCTOR                                        
+###############################################################################
+
+###############################################################################
+# BEGIN GET FUNCTIONS                                        
+
+    def getPosition(self):
+        '''
+        Get position list of state 
+        
+        Parameters
+        ----------
+        
+        Returns
+        -------
+        out: a list position of this state            
+        '''
+        return self.position
     
-    #get methods
-    #def getID(self):
-    #    return self.stateID
-    #compare Id
-    # for tracking
-    #def compareID(self, anotherRule):
-#        if (self.stateID == anotherRule.getID()):
-#            return True
-#        else:
-#            return False
-    
-    #get back pointer
-    #    return a list contains maximum 2 elements
-    #    first: first state
-    #    second : second state
+    def getRule(self):
+        '''
+        Get rule of this state 
+        
+        Parameters
+        ----------
+        
+        Returns
+        -------
+        out: rule in this state           
+        '''
+        return self.rule
+        
     def getBackPointer(self):
+        '''
+        Get back pointer list of this state 
+        
+        Parameters
+        ----------
+        
+        Returns
+        -------
+        out: backpointer list           
+        '''        
         return self.backPointer
     
-    def addBackPointer(self, aState):
-        self.backPointer.append(aState)
-    
-    #get positions
-    #    return a list contains two 2 elements
-    #    first  : start pos
-    #    second : end pos
-    def getPosition(self):
-        return self.position
-    #get Rule
-    def getRule(self):
-        return self.rule
+# END GET FUNCTIONS
+###############################################################################
       
+###############################################################################
+# BEGIN CHECK FUNCTIONS
+    def isComplete(self):
+        '''
+        Check this state is complete 
+        
+        Parameters
+        ----------
+        
+        Returns
+        -------
+        out: True if complete
+             Otherwise, return False
+        '''        
+        return self.rule.isComplete()
+
+# END CHECK FUNCTIONS
+###############################################################################
+
+###############################################################################
+# BEGIN UTILITY FUNCTIONS
     # compare to another state
+    # Input : another state
+    # Output: True if rule of this state is similar with another state
+    #         False if otherwise
     def compareTo(self, aState):
+        '''
+        Compare this state with another state 
+        
+        Parameters
+        ----------
+        aState: another state
+        
+        Returns
+        -------
+        out: True if rule of this state is similar to rule of another state           
+        '''        
         return self.rule.compareTo(aState.getRule())
     
-    # define complete
-    def isComplete(self):
-        return self.rule.isComplete()
     
-    
-              
+    def addBackPointer(self, aState):
+        '''
+        Add a state to backpointer list 
         
+        Parameters
+        ----------
+        aState: a state 
         
-        
-        
+        Returns
+        -------
+        out: backpointer list increases 1 element           
+        '''
+        self.backPointer.append(aState)
+# END UTILITY FUNCTIONS
+###############################################################################   

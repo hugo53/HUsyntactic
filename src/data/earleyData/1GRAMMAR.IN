@@ -1,0 +1,9 @@
+# Must has NP -> N
+# Example : NP -> DET N @@, wrong, must be: NP -> DET NP and NP -> N
+S -> NP VP
+NP -> DET NP
+NP -> NP PP
+VP -> VP PP
+VP -> V NP
+PP -> P NP
+NP -> N
