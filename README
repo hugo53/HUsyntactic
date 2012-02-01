@@ -1,8 +1,8 @@
 Author		:	Minh-Hoang, Nguyen
-Description	: 	
+Description	:
 				An syntactic analyzer uses CYK algorithm!
---------------------------------------------------------------------------------				
-				
+--------------------------------------------------------------------------------
+
 
 
 
@@ -11,40 +11,14 @@ Description	:
 OUTFILE
 	- Each sentence has two parts in output file
 		+ First part
-			* One line: number of syntax trees possible N 
+			* One line: number of syntax trees possible N
 		+ Second part :
 			* N lines: each line is syntax tree possible
-			
+
 	- Example
-##############################################
-1
-(S(NP Fivel)(VP(VP ate)(NP(DET the)(NP cheese))))
-14
-(S(NP John)(VP(VP walked)(PP(PP to)(NP(DET the)(NP(NP corner)(PP(PP with)(NP Fivel)))))))
-(S(NP John)(VP(VP walked)(PP(PP to)(NP(NP(DET the)(NP corner))(PP(PP with)(NP Fivel))))))
-(S(NP John)(VP(VP walked)(PP(PP(PP to)(NP(DET the)(NP(NP corner)(PP with))))(NP Fivel))))
-(S(NP John)(VP(VP walked)(PP(PP(PP to)(NP(NP(DET the)(NP corner))(PP with)))(NP Fivel))))
-(S(NP John)(VP(VP(VP walked)(PP to))(NP(DET the)(NP(NP corner)(PP(PP with)(NP Fivel))))))
-(S(NP John)(VP(VP(VP walked)(PP to))(NP(NP(DET the)(NP corner))(PP(PP with)(NP Fivel)))))
-(S(NP John)(VP(VP(VP walked)(PP(PP to)(NP(DET the)(NP corner))))(PP(PP with)(NP Fivel))))
-(S(NP John)(VP(VP(VP(VP walked)(PP to))(NP(DET the)(NP corner)))(PP(PP with)(NP Fivel))))
-(S(NP John)(VP(VP(VP walked)(PP(PP to)(NP(DET the)(NP(NP corner)(PP with)))))(NP Fivel)))
-(S(NP John)(VP(VP(VP walked)(PP(PP to)(NP(NP(DET the)(NP corner))(PP with))))(NP Fivel)))
-(S(NP John)(VP(VP(VP(VP walked)(PP to))(NP(DET the)(NP(NP corner)(PP with))))(NP Fivel)))
-(S(NP John)(VP(VP(VP(VP walked)(PP to))(NP(NP(DET the)(NP corner))(PP with)))(NP Fivel)))
-(S(NP John)(VP(VP(VP(VP walked)(PP(PP to)(NP(DET the)(NP corner))))(PP with))(NP Fivel)))
-(S(NP John)(VP(VP(VP(VP(VP walked)(PP to))(NP(DET the)(NP corner)))(PP with))(NP Fivel)))
-1
-(S(NP(DET The)(NP cars))(VP(VP corner)(ADV sharply)))
-0
-THIS IS NOT CORRECT SENTENCE
-################################################	
-		 
 
 
 
-
-
-Note: 
-	- To convert file to UNIX format (endline by LF, instead CR/LF in Window) 
+Note:
+	- To convert file to UNIX format (endline by LF, instead CR/LF in Window)
 	in git, use: dos2unix -f -D filename

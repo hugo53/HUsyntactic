@@ -15,19 +15,17 @@ if __name__ == '__main__':
     lexiconFile = '../resources/earley/LEXICON1.IN'
     sentenceFile = '../resources/earley/SENTENCES1.IN'
     outFile = '../resources/earley/OUTFILE1.OUT'
-    
+
     io = EarleyIO()
     sents = io.readSentence(sentenceFile)
     print sents
     gram1 = io.readGrammar(grammarFile)
     gram2 = io.readLexicon(lexiconFile)
-    
+
     gram1.extend(gram2)
-    
+
     earleyRun = EarleyAlgorithm(gram1, outFile)
-    
+
     for i in range(0, len(sents)):
         earleyRun.run(sents[i])
-        
     print "DONE!"
-    
