@@ -1,9 +1,7 @@
 # HUsyntactic
 
 Author		:	Minh-Hoang, Nguyen
-
 Email		: 	hoangnm[dot]53[at]gmail[dot]com
-
 Description	:
 			A syntactic analyzer uses CYK algorithm and 
 			Earley algorithm
@@ -15,13 +13,13 @@ You can use command:
 ```
 $ python HUsyntactic.py -a [c|e] -g grammarFile -l lexiconFile -s sentenceFile -o outFile
 	
-	-a : type of algorithm.
-		c for cyk
-		e for earley
-	-g : name of file contains grammar rules
-	-l : name of file contains lexcicon rules
-	-s : name of file contains sentences
-	-o : name of output file
+		-a : type of algorithm.
+			c for cyk
+			e for earley
+		-g : name of file contains grammar rules
+		-l : name of file contains lexcicon rules
+		-s : name of file contains sentences
+		-o : name of output file
 ```
 
 
