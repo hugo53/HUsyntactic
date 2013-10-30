@@ -1,7 +1,9 @@
 # HUsyntactic
 
 Author		:	Minh-Hoang, Nguyen
+
 Email		: 	hoangnm[dot]53[at]gmail[dot]com
+
 Description	:
 			A syntactic analyzer uses CYK algorithm and 
 			Earley algorithm
