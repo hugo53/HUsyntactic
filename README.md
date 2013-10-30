@@ -33,7 +33,6 @@ $ python HUsyntactic.py -a c
                         -g data/ckyData/GRAMMAR.IN 
                         -l data/ckyData/LEXICON.IN 
                         -s data/ckyData/SENTENCES.IN -o data/ckyData/OUTFILE.OUT
-
 ```
 
 ##DOCUMENTATION
