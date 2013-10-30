@@ -1,7 +1,9 @@
 # HUsyntactic
 
-Author		:	Minh-Hoang, Nguyen 
+Author		:	Minh-Hoang, Nguyen
+
 Email		: 	hoangnm[dot]53[at]gmail[dot]com
+
 Description	:
 			A syntactic analyzer uses CYK algorithm and 
 			Earley algorithm
@@ -12,6 +14,7 @@ Description	:
 You can use command:
 ```
 $ python HUsyntactic.py -a [c|e] -g grammarFile -l lexiconFile -s sentenceFile -o outFile
+	
 	-a : type of algorithm.
 		c for cyk
 		e for earley
@@ -27,9 +30,9 @@ $ python HUsyntactic.py -a [c|e] -g grammarFile -l lexiconFile -s sentenceFile -
 $ pwd
 HUsyntactic/src
 $ python HUsyntactic.py -a c 
-			-g data/ckyData/GRAMMAR.IN 
-			-l data/ckyData/LEXICON.IN 
-			-s data/ckyData/SENTENCES.IN -o data/ckyData/OUTFILE.OUT
+                        -g data/ckyData/GRAMMAR.IN 
+                        -l data/ckyData/LEXICON.IN 
+                        -s data/ckyData/SENTENCES.IN -o data/ckyData/OUTFILE.OUT
 
 ```
 
