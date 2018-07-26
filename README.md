@@ -9,7 +9,7 @@ Description	:
 			Earley algorithm
 
 
-##HOW TO USE?
+## HOW TO USE?
 
 You can use command:
 ```
@@ -25,7 +25,7 @@ $ python HUsyntactic.py -a [c|e] -g grammarFile -l lexiconFile -s sentenceFile -
 ```
 
 
-###Example:
+### Example:
 ```
 $ pwd
 HUsyntactic/src
@@ -35,10 +35,10 @@ $ python HUsyntactic.py -a c
                         -s data/ckyData/SENTENCES.IN -o data/ckyData/OUTFILE.OUT
 ```
 
-##DOCUMENTATION
+## DOCUMENTATION
 Please see HUsyntactic.pdf ( It's in Vietnamese! )
 
-##LICENSE
+## LICENSE
   All HUsyntactic source files are made available under the terms of the
   GNU Affero General Public License (AGPL).  See GNU-AGPL-3.0 files for
   details.
